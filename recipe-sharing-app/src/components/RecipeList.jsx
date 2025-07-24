@@ -1,5 +1,6 @@
 import { useRecipeStore } from '../recipeStore';
 import { Link } from 'react-router-dom';
+import RecommendationsList from './RecommendationsList';  // Import it
 
 const RecipeList = () => {
   const filteredRecipes = useRecipeStore((state) => state.filteredRecipes);
@@ -20,6 +21,10 @@ const RecipeList = () => {
           </Link>
         </div>
       ))}
+
+      <hr />
+      {/* Display personalized recommendations below the list */}
+      <RecommendationsList />
     </div>
   );
 };
