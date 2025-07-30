@@ -1,4 +1,4 @@
-const fetchAdvancedUsers = async ({ username, location, minRepos }) => {
+export const fetchUserData = async ({ username, location, minRepos }) => {
   let query = "";
 
   if (username) query += `${username} in:login `;
@@ -14,5 +14,3 @@ const fetchAdvancedUsers = async ({ username, location, minRepos }) => {
   const data = await response.json();
   return data.items;
 };
-
-export default fetchAdvancedUsers;
