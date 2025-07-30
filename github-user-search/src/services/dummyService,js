@@ -1,3 +1,0 @@
-export function dummyService() {
-  return "This is a placeholder service";
-}
