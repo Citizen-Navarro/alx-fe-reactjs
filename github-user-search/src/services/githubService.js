@@ -1,6 +1,11 @@
-import axios from "axios";
+export const fetchUsersByQuery = async (query) => {
+  const url = `https://api.github.com/search/users?q=${encodeURIComponent(query)}`;
 
-export async function fetchUserData(username) {
-  const response = await axios.get(`https://api.github.com/users/${username}`);
-  return response.data;
-}
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch GitHub users");
+  }
+
+  return await response.json();
+};
