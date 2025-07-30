@@ -1,12 +1,17 @@
-// src/App.jsx
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Search from "./components/Search";
 
 function App() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>GitHub User Search App</h1>
-      <p>Start searching for GitHub users.</p>
-    </div>
+    <Router>
+      <div className="App">
+        <h1>GitHub User Search</h1>
+        <Routes>
+          <Route path="/" element={<Search />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
