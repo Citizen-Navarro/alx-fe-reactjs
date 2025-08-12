@@ -3,18 +3,52 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta or bacon",
+      "2 large eggs",
+      "50g grated Parmesan cheese",
+      "2 cloves garlic (optional)",
+      "Salt and freshly ground black pepper"
+    ],
+    "instructions": "Cook spaghetti in salted water until al dente. Fry pancetta until crispy. Whisk eggs with Parmesan and pepper. Drain pasta, reserving some cooking water. Toss pasta with pancetta, remove from heat, then stir in egg mixture, adding reserved water if needed for creaminess."
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "500g boneless chicken",
+      "1 cup yogurt",
+      "2 tbsp lemon juice",
+      "2 tbsp tikka masala spice blend",
+      "2 tbsp butter",
+      "1 large onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "400g canned tomatoes",
+      "1 cup heavy cream"
+    ],
+    "instructions": "Marinate chicken in yogurt, lemon juice, and spices for at least 1 hour. Grill or pan-fry until cooked through. In a pan, melt butter, sauté onion, garlic, and ginger. Add tomatoes and simmer. Stir in cream, then add chicken and cook until sauce thickens."
   },
   {
     "id": 3,
     "title": "Vegetable Stir Fry",
     "summary": "Crispy vegetables tossed in a savory soy-based sauce, perfect for a quick dinner.",
-    "image": "https://via.placeholder.com/300x200"
+    "image": "https://via.placeholder.com/300x200",
+    "ingredients": [
+      "1 cup broccoli florets",
+      "1 cup bell peppers, sliced",
+      "1 cup carrots, sliced",
+      "1 cup snap peas",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tbsp sesame oil",
+      "2 cloves garlic, minced",
+      "1 tsp ginger, grated"
+    ],
+    "instructions": "Heat sesame oil in a wok. Stir-fry garlic and ginger briefly. Add vegetables and cook on high heat for 3–4 minutes until tender-crisp. Stir in soy sauce and oyster sauce, tossing to coat evenly. Serve immediately."
   }
 ]
