@@ -38,8 +38,8 @@ export default function AddRecipeForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded shadow">
-      <h2 className="text-2xl font-bold mb-6 text-center">Add New Recipe</h2>
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-4 md:p-6 bg-white rounded shadow">
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Add New Recipe</h2>
 
       <label className="block mb-4">
         <span className="text-gray-700 font-semibold">Recipe Title</span>
@@ -49,7 +49,7 @@ export default function AddRecipeForm() {
           onChange={(e) => setTitle(e.target.value)}
           className={`mt-1 block w-full rounded border ${
             errors.title ? "border-red-500" : "border-gray-300"
-          } p-2`}
+          } p-2 md:p-3`}
         />
         {errors.title && <p className="text-red-500 text-sm mt-1">{errors.title}</p>}
       </label>
@@ -62,7 +62,7 @@ export default function AddRecipeForm() {
           rows="3"
           className={`mt-1 block w-full rounded border ${
             errors.ingredients ? "border-red-500" : "border-gray-300"
-          } p-2`}
+          } p-2 md:p-3`}
           placeholder="e.g. 200g flour, 2 eggs, 100ml milk"
         />
         {errors.ingredients && <p className="text-red-500 text-sm mt-1">{errors.ingredients}</p>}
@@ -76,7 +76,7 @@ export default function AddRecipeForm() {
           rows="5"
           className={`mt-1 block w-full rounded border ${
             errors.instructions ? "border-red-500" : "border-gray-300"
-          } p-2`}
+          } p-2 md:p-3`}
           placeholder="Describe the cooking steps here..."
         />
         {errors.instructions && <p className="text-red-500 text-sm mt-1">{errors.instructions}</p>}
@@ -84,7 +84,7 @@ export default function AddRecipeForm() {
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+        className="w-full bg-blue-600 text-white py-2 md:py-3 rounded hover:bg-blue-700 transition"
       >
         Submit Recipe
       </button>
